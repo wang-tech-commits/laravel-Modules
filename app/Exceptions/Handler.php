@@ -3,10 +3,12 @@
 namespace App\Exceptions;
 
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
+use Jason\Api\Traits\ApiException;
 use Throwable;
 
 class Handler extends ExceptionHandler
 {
+    use ApiException;
     /**
      * A list of the exception types that are not reported.
      *
